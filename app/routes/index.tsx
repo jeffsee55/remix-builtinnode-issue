@@ -1,6 +1,8 @@
 import React from "react";
 import { useRouteData } from "@remix-run/react";
-import * as Cognito from "amazon-cognito-identity-js";
+import Buffer from "buffer";
+
+console.log(Buffer);
 
 export function meta() {
   return {
@@ -8,8 +10,6 @@ export function meta() {
     description: "Welcome to remix!",
   };
 }
-
-console.log(Cognito);
 
 export default function Index() {
   let data = useRouteData();
